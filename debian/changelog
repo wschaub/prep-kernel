@@ -2,6 +2,7 @@ prep-kernel (2.0.0-20120903) maverick; urgency=low
 
   * add initramfs update hook
   * change arch to any since this is just a shell script. 
+  * don't run if /dev/root is absent. 
 
  -- William Schaub <wschaub@genesi-tech.com>  Mon, 03 Sep 2012 03:48:53 -0400
 
