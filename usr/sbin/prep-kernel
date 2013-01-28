@@ -53,6 +53,10 @@ efikamx_prep_kernel() {
 	loadaddr=0x90008000
 
 	rootfs=$(find_root_device)
+    if [ "" = "$rootfs" ]; then
+        echo "I can't find the root device! exiting" >&2
+        exit 1
+    fi
 
 	printf "Generating kernel u-boot image... " >&2
 	mkimage -A arm -O linux -T kernel -C none -a ${loadaddr} \

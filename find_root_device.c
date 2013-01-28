@@ -141,6 +141,9 @@ int main(int argc, char **argv) {
 		result = find_block_device(argv[1]);
 	else
 		result = find_block_device("/");
+    /* not likely but better safe than sorry */
+    if(result == NULL) return 1;
+
 	printf("%s",result);
 	return 0;
 }
