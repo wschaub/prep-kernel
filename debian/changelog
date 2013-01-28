@@ -1,3 +1,10 @@
+prep-kernel (2.0.0-20130128) maverick; urgency=low
+
+  * remove the need for /dev/root to exist
+    Intsead we replace it by a C program borrowed from busybox
+
+ -- William Schaub <wschaub@genesi-tech.com>  Mon, 28 Jan 2013 22:15:47 +0000
+
 prep-kernel (2.0.0-20120903) maverick; urgency=low
 
   * add initramfs update hook
