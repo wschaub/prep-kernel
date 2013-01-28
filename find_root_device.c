@@ -1,7 +1,7 @@
 /* This is a standalone version of a utility from busybox that finds the device
  *  that a particular filesystem is mounted on by default it gives the name of
  *  the device that the root filesystem is mounted on. otherwise it gives you 
- *  the device name that the path given as it's first argument is mounted on.
+ *  the device name that the path given as its first argument is mounted on.
  *  -- William Schaub <wschaub@genesi-tech.com>
  */
 
@@ -125,8 +125,8 @@ char* xstrdup(const char *s)
 
         if (t == NULL) {
                 perror("xstrdup ran out of memory\n");
-		abort();
-	}
+                abort();
+        }
 
 
         return t;
